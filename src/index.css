@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.blue-background {
+  background-color: #297bfddb;
+}
+
+.css-control {
+  .css-13cymwt-control {
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+/* css for the modal */
+.animation-zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 0.7s;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* css for the spin setting icon */
+.spin {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
