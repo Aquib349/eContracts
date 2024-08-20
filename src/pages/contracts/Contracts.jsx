@@ -1,9 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ToggleSideMenuContext } from "../../context/ToggleMenuContext";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 
 function Contracts() {
   const { show } = useContext(ToggleSideMenuContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/contractDetail/summary");
+  }, []);
   return (
     <>
       <div
@@ -12,7 +17,7 @@ function Contracts() {
         }`}
       >
         <Outlet />
-        <Link to="/contractDetail/summary">To Contract Detail</Link>
+        {/* <Link to="/contractDetail/summary">To Contract Detail</Link> */}
       </div>
     </>
   );
