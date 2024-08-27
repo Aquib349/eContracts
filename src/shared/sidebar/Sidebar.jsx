@@ -37,7 +37,7 @@ function Sidebar() {
   return (
     <div className="sidebar-component mt-14">
       <div
-        className={`main blue-background h-screen fixed left-0 transition-all ease-in-out duration-500 ${
+        className={`main bg-blue-500 h-screen fixed left-0 transition-all ease-in-out duration-500 ${
           show ? "w-14" : "w-0"
         }`}
       >

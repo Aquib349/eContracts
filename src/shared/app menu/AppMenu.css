@@ -1,0 +1,7 @@
+.truncate-text {
+  display: inline-block;
+  max-width: 100px; /* Adjust the width according to your needs */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,21 +1,27 @@
 import { TbGridDots } from "react-icons/tb";
+import { MdOutlineSort } from "react-icons/md";
 import { useContext } from "react";
 import { ToggleSideMenuContext } from "../../context/ToggleMenuContext";
 import Drawer from "../../Elements/Drawer";
 import Navigate from "./Navigate";
 import Navlist from "./Navlist";
 import Search from "./Search";
+import AppMenu from "../app menu/AppMenu";
 
 function Navbar() {
   const { show, setShow, Title, setTitle } = useContext(ToggleSideMenuContext);
 
   return (
     <>
-      <nav className="blue-background fixed top-0 w-full z-50">
+      <nav className="bg-blue-500 fixed top-0 w-full z-50">
         <div className="flex items-center justify-between p-2 relative">
           <div className="flex items-center gap-2">
-            <span className="text-[1.7rem] text-black cursor-pointer pl-2 pt-1">
-              <TbGridDots onClick={() => setShow(!show)} />
+            <span className="text-black cursor-pointer pl-2 flex items-center gap-2">
+              <MdOutlineSort
+                className="text-[1.8rem] hover:text-white hover:font-bold"
+                onClick={() => setShow(!show)}
+              />
+              <AppMenu />
             </span>
             <div className="flex items-center gap-3">
               <img

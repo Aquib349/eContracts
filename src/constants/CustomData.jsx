@@ -3,6 +3,13 @@ import { SlBell } from "react-icons/sl";
 import { IoBookmarkOutline } from "react-icons/io5";
 import { FaRegCircleQuestion } from "react-icons/fa6";
 import { FaRegUserCircle } from "react-icons/fa";
+import dashboard from "../assets/dashboard.png";
+import BADashboard from "../assets/BADashboard.png";
+import office365 from "../assets/pngegg.png";
+import { FcTemplate } from "react-icons/fc";
+import { FcBullish } from "react-icons/fc";
+import { FcFlowChart } from "react-icons/fc";
+import { FcServices } from "react-icons/fc";
 
 export const NavItems = [
   { id: 1, name: "Tasks", icon: <AiOutlineBars /> },
@@ -13,10 +20,22 @@ export const NavItems = [
 ];
 
 export const NavigateItem = [
-  { id: 1, name: "My Dashboard", links: "", child: [] },
-  { id: 2, name: "Go To Business Area Dashboard", links: "", child: [] },
-  { id: 3, name: "Business User Portal", links: "", child: [] },
-  { id: 4, name: "Global Insights and Reports", links: "", child: [] },
+  { id: 1, name: "Dashboard", links: "", child: [], icon: dashboard },
+  {
+    id: 2,
+    name: "Business Area Dashboard",
+    links: "",
+    child: [],
+    icon: BADashboard,
+  },
+  { id: 3, name: "BU Portal", links: "", child: [], icon: <FcTemplate /> },
+  {
+    id: 4,
+    name: "Global Insights and Reports",
+    links: "",
+    child: [],
+    icon: <FcBullish />,
+  },
   {
     id: 5,
     name: "eContracts Administration",
@@ -28,7 +47,14 @@ export const NavigateItem = [
       { id: "e4", name: "Users & Permissions", links: "" },
       { id: "e5", name: "Admin Dashboard", links: "" },
     ],
+    icon: <FcFlowChart />,
   },
-  { id: 6, name: "Account Management", links: "", child: [] },
-  { id: 7, name: "Office 365", links: "", child: [] },
+  {
+    id: 6,
+    name: "Account Management",
+    links: "",
+    child: [],
+    icon: <FcServices />,
+  },
+  { id: 7, name: "Office 365", links: "", child: [], icon: office365 },
 ];
