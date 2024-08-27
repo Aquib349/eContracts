@@ -12,18 +12,20 @@ function Navbar() {
   return (
     <>
       <nav className="blue-background fixed top-0 w-full z-50">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between p-2 relative">
-          <span className="text-[1.7rem] text-black absolute left-[-2%] top-4 cursor-pointer">
-            <TbGridDots onClick={() => setShow(!show)} />
-          </span>
-          <div className="flex items-center gap-3">
-            <img
-              src="https://econtracts2412.blob.core.windows.net/companylogo/companylogo_egPTzQev.gif"
-              className="h-10"
-              alt="eContract Logo"
-            />
-            {/* navigate to */}
-            <Navigate />
+        <div className="flex items-center justify-between p-2 relative">
+          <div className="flex items-center gap-2">
+            <span className="text-[1.7rem] text-black cursor-pointer pl-2 pt-1">
+              <TbGridDots onClick={() => setShow(!show)} />
+            </span>
+            <div className="flex items-center gap-3">
+              <img
+                src="https://econtracts2412.blob.core.windows.net/companylogo/companylogo_egPTzQev.gif"
+                className="h-10"
+                alt="eContract Logo"
+              />
+              {/* navigate to */}
+              {/* <Navigate /> */}
+            </div>
           </div>
 
           <button
