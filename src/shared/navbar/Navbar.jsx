@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <>
       <nav className="blue-background fixed top-0 w-full z-50">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 relative">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between p-2 relative">
           <span className="text-[1.7rem] text-black absolute left-[-2%] top-4 cursor-pointer">
             <TbGridDots onClick={() => setShow(!show)} />
           </span>
